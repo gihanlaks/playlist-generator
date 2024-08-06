@@ -1,5 +1,9 @@
-// Authorization token that must have been created previously. See : https://developer.spotify.com/documentation/web-api/concepts/authorization
-const token = 'BQA1tzFCnxwlFDiMZ-qEN_icAcOAaE88wsgwLsSTvthS5p9rgSenW11sT7Gta4Sy94lZdxXhuD2KxvuaPzJcpPR1Az4W2nbI5PHGi3APyRIblOYBYiLA4hY3b9oZOlAQ3TGgrExSGxGYnJQK8AV2i3LsMuHI-aFQD-m703v_0nQ67_88O860tJRCMv40MidvllaACCww2ttMQ0tSacs9nIR22vH_UfRpNifFk0wbxUnTfUu2LTfVpweEenvkARTj9oXKn328QMjXrFJepwUoX2LPZK6HOw';
+// Go to this: https://developer.spotify.com/
+// scroll down and identify the code Section
+// You probably you will be asked to login to spotify account. do so. 
+// Once you see the authorization key generated inside the code, Copy that. 
+// Paste it below
+const token = 'Paste auth key here';
 
 async function fetchWebApi(endpoint: any, method: any, body?: any) {
     const res = await fetch(`https://api.spotify.com/${endpoint}`, {
